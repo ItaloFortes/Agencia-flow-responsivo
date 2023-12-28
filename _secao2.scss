@@ -1,0 +1,82 @@
+
+.pg2-titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        position: absolute;
+        top: 76rem;
+    
+            h1{
+                color: $corbranca;
+                font-family: $fontroboto;
+                font-size: 10rem;
+                margin-bottom: -1rem;
+                margin-top: -1rem;
+                padding: 0;
+            }
+    
+            h2{
+                color: $corbranca;
+                font-family: $fontplayfair;
+                font-weight: 100;
+                letter-spacing: 0.2rem;
+                font-size: 1.5rem;
+                padding: 0;
+            }
+    }
+    
+    .bg2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+
+        img{
+            width: 100%;
+        }
+    }
+    
+    .conjunto-blocos1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+        top: 96rem;
+    
+        &:hover > :not(:hover) {
+            opacity: .4;
+            transform: scale(0.9);
+            background-color: $cor-marrom-suave;
+        }
+    
+        .bloco1,
+        .bloco2,
+        .bloco3,
+        .bloco4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: $corbranca;
+            width: 15rem;
+            height: 15rem;
+            transition: .35s;
+            cursor: pointer;
+    
+            img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    }
+    
+    
+    
+

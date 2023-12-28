@@ -1,0 +1,54 @@
+
+//Aqui são todos os ajustes da terceira seção
+
+
+    .bg3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+        
+        
+    }
+    
+    .palavras{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 140rem;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        // transition: filter 1s ease;
+        animation: floatAndBlurAnimation 4s ease infinite alternate;
+
+        img{
+            width: 100%;
+        }
+    
+        //aqui vamos variar o tempo de movimentação e o do blur para não ficarem iguais
+        @keyframes floatAndBlurAnimation { 
+             0%, 100% { 
+                transform: translateY(0rem);
+                filter: blur(0.3rem);
+             }    
+    
+             50% {
+                transform: translateY(2rem);
+                filter: blur(0rem);
+             }
+        }
+    
+    }
+

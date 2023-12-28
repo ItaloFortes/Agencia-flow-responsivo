@@ -1,0 +1,108 @@
+
+
+.bg-sec5{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: -5rem;
+    z-index: -1;
+
+    img{
+        width: 100%;
+    }
+}
+
+.msg-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    top: 25rem;
+    right: 30rem;
+    z-index: 2;
+    position: relative;
+    
+
+        h1{
+           color:$cinza-claro; 
+           margin-bottom: 1.5rem;
+           font-size: 2rem;
+
+        }
+        h2{
+            color: $cinza-claro;
+            font-size: 1rem;
+            text-align: center;
+
+        }
+    }
+
+.container-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    top: 15rem;
+    right: 30rem;
+    margin: 0 auto;
+    padding: 15rem 0 2rem 0;
+    border-radius: 20px;
+    background-color: $corbg;
+    z-index: 1;
+    position: relative;
+
+    .form-group {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-bottom: 20px;
+        position: relative;
+        font-size: 0.8rem;
+        font-family: $fontroboto;
+
+        input,
+        textarea {
+            width: 25rem;
+            font-size: 1rem;
+            color: $cor-marrom-suave;
+            font-weight: 100;
+            padding: 8px;
+            background-color: $corbg;
+            box-sizing: border-box;
+            border: 0.1rem solid;
+            border-radius: 0.3rem;
+            transition: all 0.8s ease;
+
+}  
+            
+        }
+
+        label {
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            font-weight: 100;
+            color: $corbranca;
+            transition: all 0.3s ease;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: $cor-marrom-suave;
+            border-radius: 25px;
+            color: #fff;
+            border-color: $cor-marrom-suave;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 10px; // Adicionei um espaço entre o input e o botão de envio
+
+    
+        }
+    }

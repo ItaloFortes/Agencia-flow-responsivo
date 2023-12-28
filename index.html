@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="#" />
+    <script src="script.js"></script>
+
+    <title>FLOW Agência</title>
+  </head>
+  <body onload="loading()">
+    <div class="box-load">
+      <div class="pre"></div>
+    </div>
+    <div class="conteudo">
+      <main>
+        <!--aqui começa o nosso menu com o logo ao lado-->
+        <div class="container">
+          <div class="logo">
+            <img src="imgs/logos/flow.png" alt="Flow Agência" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#inicio">INÍCIO</a></li>
+              <li><a href="#solucoes">SOLUÇÕES</a></li>
+              <li><a href="#clientes">CLIENTES</a></li>
+              <li><a href="#contato">CONTATO</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--aqui começao a primeira seção do site-->
+
+        <div class="titulo">
+          <h2>INICIE SUA</h2>
+          <br />
+          <h1>JORNADA</h1>
+          <br />
+          <h2>E LEVE SUA MARCA ALÉM</h2>
+        </div>
+
+        <div class="bg1">
+          <img src="imgs/imgs-site/bg-pg1.png" alt="imagem astronauta" />
+        </div>
+
+        <!--aqui começao a segunda seção do site-->
+        <div class="pg2-titulo">
+          <h2>NÓS TEMOS O QUE VOCÊ</h2>
+          <br />
+          <h1>PRECISA</h1>
+        </div>
+
+        <div class="conjunto-blocos1">
+          <div class="bloco1">
+            <h3>DESIGN</h3>
+            <img src="imgs/imgs-site/design.png" alt="design" />
+            <h3>CONHEÇA</h3>
+          </div>
+
+          <div class="bloco2">
+            <h3>WEB DESIGN</h3>
+            <img src="imgs/imgs-site/coding.png" alt="web-design" />
+            <h3>CONHEÇA</h3>
+          </div>
+
+          <div class="bloco3">
+            <h3>SOCIAL MEDIA</h3>
+            <img src="imgs/imgs-site/social-media.png" alt="design" />
+            <h3>CONHEÇA</h3>
+          </div>
+
+          <div class="bloco4">
+            <h3>AUDIOVISUAL</h3>
+            <img src="imgs/imgs-site/video.png" alt="web-design" />
+            <h3>CONHEÇA</h3>
+          </div>
+        </div>
+
+        <div class="bg2">
+          <img src="imgs/imgs-site/bg-pg2.png" alt="background2" />
+        </div>
+
+        <!--aqui começao a terceira seção do site-->
+
+        <div class="palavras">
+          <source
+            media="(max-width: 768px)"
+            srcset="img/imgs-site/palavras-768px.png"
+          />
+          <img src="imgs/imgs-site/palavras.png" alt="palavras" />
+        </div>
+
+        <div class="bg3">
+          <img src="imgs/imgs-site/bg-pg3.png" alt="background3" />
+        </div>
+      </main>
+
+      <!--aqui começa a quarta seção do site-->
+      <div class="frase">
+        <h2>MARCAS QUE JÁ PASSARAM POR AQUI</h2>
+      </div>
+      <div class="bg-sec4">
+        <div class="grupo1">
+          <img src="imgs/imgs-site/logo-cooper.png" alt="cooper" />
+          <img src="imgs/imgs-site/avell.png" alt="avell" />
+          <img src="imgs/imgs-site/fiat.png" alt="fiat" />
+          <img src="imgs/imgs-site/azul.png" alt="azul" />
+        </div>
+
+        <div class="grupo2">
+          <img src="imgs/imgs-site/globo.png" alt="globo" />
+          <img src="imgs/imgs-site/logitec.png" alt="logitech" />
+          <img src="imgs/imgs-site/viacredi.png" alt="viacredi" />
+          <img src="imgs/imgs-site/sbt.png" alt="sbt" />
+        </div>
+      </div>
+
+      <!--aqui começa a quinta seção do site-->
+      <div class="msg-form">
+        <h1>VAMOS NESSA!</h1>
+        <h2>
+          PREENCHA O FORMULÁRIO E <br />
+          INICIE SUA JORNADA CONOSCO!
+        </h2>
+      </div>
+
+      <div class="container-contato">
+        <form action="/processar-formulario" method="post">
+          <div class="form-group">
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required />
+            <label for="nomeCompleto">Nome Completo:</label>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" name="email" required />
+            <label for="email">Email:</label>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" id="telefone" name="telefone" required />
+            <label for="telefone">Telefone:</label>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="descricao"
+              name="descricao"
+              rows="4"
+              required
+            ></textarea>
+            <label for="descricao"
+              >Descreva o que você precisa hoje que podemos oferecer:</label
+            >
+          </div>
+
+          <div class="form-group">
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+
+      <div class="bg-sec5">
+        <img src="imgs/imgs-site/bg-sec5.png" alt="imagem-bg" />
+      </div>
+
+      <img src="imgs/imgs-site/botão_top.png" alt="Botão topo" id="myBtn" />
+
+      <footer>
+        <div class="desenvolvido">
+          <p>
+            Desenvolvido por Italo Fortes | Este é um site fictício, feito
+            exclusivamente para fins de estudo.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
